@@ -1,0 +1,61 @@
+Here’s a step-by-step workflow of how the Student Management System project operates, based on your Main.java and the typical structure of such a Java project:
+
+1. Startup-
+The program starts by creating an instance of StudentDAO (Data Access Object) and a Scanner for user input.
+
+2. Main Menu Loop-
+The user is presented with a menu:
+Add Student
+View All Students
+Update Student
+Delete Student
+Exit
+The menu repeats until the user chooses to exit.
+
+3. Menu Options & Their Workflows-
+a. Add Student-
+User is prompted to enter:
+Name
+Age
+Course
+A new Student object is created with these details.
+dao.addStudent(student) is called to save the student (likely in a database).
+
+b. View All Students-
+dao.getAllStudents() is called to retrieve a list of all students.
+The program prints each student’s:
+ID
+Name
+Age
+Course
+
+c. Update Student-
+User is prompted to enter:
+The ID of the student to update
+New name
+New age
+New course
+A new Student object is created with the updated details (including the ID).
+dao.updateStudent(student) is called to update the student’s information in the database.
+
+d. Delete Student-
+User is prompted to enter the ID of the student to delete.
+dao.deleteStudent(id) is called to remove the student from the database.
+
+e. Exit-
+The program prints an exit message and terminates.
+
+4. Supporting Classes (Typical Roles)-
+Student.java: Represents a student entity (fields: id, name, age, course; with getters/setters).
+StudentDAO.java: Handles all database operations (add, get, update, delete students).
+DBConnection.java: Manages the connection to the database (likely using JDBC).
+db/schema.sql: Contains the SQL schema for the students table.
+
+5. Database Workflow-
+When adding, updating, or deleting students, the DAO uses SQL queries (via JDBC) to interact with the database.
+When viewing students, the DAO fetches all records from the students table and returns them as a list of Student objects.
+
+6. How to Run-
+Compile all Java files in src/.
+Ensure the database is set up using db/schema.sql.
+Run Main.java to start the application.
