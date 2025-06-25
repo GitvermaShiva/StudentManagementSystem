@@ -1,0 +1,25 @@
+# 👉 Java build artifacts
+*.class
+*.jar
+*.war
+
+# 👉 Logs
+*.log
+
+# 👉 IDE-specific folders and files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# 👉 OS junk files
+.DS_Store
+Thumbs.db
+
+# 👉 Dependency JARs (optional if using Maven/Gradle)
+lib/
+
+# 👉 Database configs (in case you add them later)
+*.properties
+*.env
