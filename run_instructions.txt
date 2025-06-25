@@ -44,11 +44,11 @@ c.Process scheduling
 
 In Summary-
 Layer-	        Role-
-Java Code	Your logic (CRUD, input, DB calls)
-JVM	        Runs compiled .class files
-JDBC Driver	Connects Java to MySQL
+Java Code	    Your logic (CRUD, input, DB calls)
+JVM	            Runs compiled .class files
+JDBC Driver	    Connects Java to MySQL
 MySQL Server	Stores student data
-Windows OS	Runs everything, manages files, sockets, memory
+Windows OS	    Runs everything, manages files, sockets, memory
 
 Why it works "locally":
 Because: Java + MySQL are installed on your machine and my OS (Windows) manages system resources and allows inter-process communication between Java and MySQL
