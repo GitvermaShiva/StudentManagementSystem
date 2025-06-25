@@ -65,7 +65,6 @@ How This Project Runs Locally-
 4. MySQL stores/retrieves student data from disk
 5. Windows OS manages all system-level operations
 
-
 Future Enhancements-
 GUI version with JavaFX or Swing
 Admin login authentication
