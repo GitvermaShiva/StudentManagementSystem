@@ -58,6 +58,14 @@ Place the .jar file in a /lib folder
 Compile: javac -cp "../lib/mysql-connector-j-x.x.x.jar" *.java
 Run: java -cp ".;../lib/mysql-connector-j-x.x.x.jar" Main
 
+How This Project Runs Locally-
+1. Java code is compiled into `.class` files using `javac`
+2. JVM runs the code with the MySQL Connector JAR
+3. JDBC establishes a connection to MySQL
+4. MySQL stores/retrieves student data from disk
+5. Windows OS manages all system-level operations
+
+
 Future Enhancements-
 GUI version with JavaFX or Swing
 Admin login authentication
